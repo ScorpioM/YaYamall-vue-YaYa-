@@ -1,5 +1,6 @@
 module.exports = {
     lintOnSave: false,
+    publicPath: "./",
     devServer: {
         open: process.platform === 'vue',
         // host: '127.0.0.1',
