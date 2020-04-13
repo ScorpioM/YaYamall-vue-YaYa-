@@ -131,6 +131,22 @@ table {
     border-spacing: 0;
 }
 
+.Layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Layout:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Layout {
+    zoom: 1;
+    /*为了兼容IE*/
+}
+
 
 /* 清除浮动 */
 
