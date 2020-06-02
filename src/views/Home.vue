@@ -5,7 +5,7 @@
     <input type="text" v-model="username" />
     <input type="text" v-model="password" />
     <button @click="btn" class="btn">登录</button>
-
+    <van-button type="primary">主要按钮</van-button>
     <el-select v-model="value" placeholder="请选择" @change="selectChange">
       <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
     </el-select>

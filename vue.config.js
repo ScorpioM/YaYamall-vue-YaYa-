@@ -8,11 +8,11 @@ module.exports = {
         // https: false,
         // hotOnly: false,
         proxy: { // 设置代理
-            '/wllxApi': {
-                target: 'http://47.97.74.226:8080/',
+            '/requestApi/*': {
+                target: 'http://192.168.0.123:8080/api/education/',
                 changeOrigin: true,
                 pathRewrite: {
-                    '^/wllxApi': ''
+                    '^/requestApi': 'http://192.168.0.123:8080/api/education/'
                 }
             }
         },
