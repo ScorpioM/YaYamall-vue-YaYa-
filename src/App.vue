@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    </div>-->
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive" v-wechat-title="$route.meta.title"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive" v-wechat-title="$route.meta.title"></router-view>
   </div>
 </template>
 

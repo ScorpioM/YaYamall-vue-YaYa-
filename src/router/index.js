@@ -7,17 +7,17 @@ Vue.use(VueRouter);
 
 const routes = [{
         path: "/",
-        name: "home",
+        name: "Index",
         component: () =>
-            import ("@/views/Home.vue"),
-        meta: { requiresAuth: false }
+            import ("@/views/Index.vue"),
+        meta: { requiresAuth: false, keepAlive: true }
     },
     {
         path: "/about",
         name: "about",
         component: () =>
             import ("../views/About.vue"),
-        meta: { requiresAuth: true }
+        meta: { requiresAuth: false, keepAlive: true }
     }
 ];
 
