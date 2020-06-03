@@ -5,6 +5,10 @@ import store from "./store";
 import "./js/cookie";
 import './config/rem';
 
+// 设置title
+import VueWechatTitle from 'vue-wechat-title'
+Vue.use(VueWechatTitle)
+
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)

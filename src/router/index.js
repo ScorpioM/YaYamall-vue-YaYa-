@@ -10,14 +10,14 @@ const routes = [{
         name: "Index",
         component: () =>
             import ("@/views/Index.vue"),
-        meta: { requiresAuth: false, keepAlive: true }
+        meta: { requiresAuth: false, keepAlive: true, title: "首页" }
     },
     {
         path: "/about",
         name: "about",
         component: () =>
             import ("../views/About.vue"),
-        meta: { requiresAuth: false, keepAlive: true }
+        meta: { requiresAuth: false, keepAlive: true, title: "关于" }
     }
 ];
 
