@@ -24,7 +24,10 @@ const routes = [{
 const router = new VueRouter({
     mode: "hash",
     base: process.env.BASE_URL,
-    routes
+    routes,
+    scrollBehavior(to, form, savedPosition) {
+        return { x: 0, y: 0 }
+    }
 });
 
 // 页面刷新时，重新赋值有没登录
