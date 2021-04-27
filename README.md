@@ -1,24 +1,90 @@
-# vue-demo
-
-## Project setup
 ```
-npm install
+YaYa医师医药商城
+===============
 ```
 
-### Compiles and hot-reloads for development
+ 
+
 ```
-npm run serve
+## 安装环境
 ```
 
-### Compiles and minifies for production
+ 
+
 ```
-npm run build
+>+ Vue.js3.0
+>+ 运行 `npm run serve`
+>+ 打包 `npm run build`
 ```
 
-### Lints and fixes files
+ 
+
+ 
+
 ```
-npm run lint
+### 特点
+~~~
+1.  商城简洁大方，整体欧美风格
+2.  商品分类明确
+~~~
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ 
+
+```
+### 应用场景
+集中管理公司旗下各网站（PC,WAP,APP,客户端）图片(具体的，比如：产品图，网站素材图)
+```
+
+ 
+
+```
+### 功能介绍
++ 站点：多个站点，可以随意切换
++ 文件夹：新建，修改，删除（注意：请选选中目录节点）
++ 图片：上传图片、全选、取消、移动、图片地址、替换、删除
++ 其它：可以支持目录搜索，拖动目录更换目录类别
+```
+
+ 
+
+ 
+
+```
+### 版本
++ V1.0    更新时间:2018-05-23
+```
+
+ 
+
+```
+### 版本库：
++ Git获取：https:``//github.com/ziqinComeOn
++ SVN获取：svn:``//gitee.com/ziqinComeOn/wn1.0
+```
+
+ 
+
+```
+### 网址：
+[https:``//github.com/ziqinComeOn](https://github.com/ziqinComeOn)
+ ``<br>
+账户：马涛 密码：mt879684365<br>
+免费使用
+```
+
+ 
+
+ 
+
+```
+### 作者：子钦加油
+1.0版本属于初级版本，只做了基础功能，只能安装“服务器”环境。欢迎与“子钦加油”交流
+```
+
+ 
+
+```
+<br>
+楼主QQ：879684365
+```
