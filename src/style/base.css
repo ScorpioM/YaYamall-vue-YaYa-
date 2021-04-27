@@ -131,18 +131,18 @@ table {
     border-spacing: 0;
 }
 
-.Layout {
+.container {
     width: 1200px;
     margin: 0 auto;
 }
 
-.Layout:after {
+.container:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.Layout {
+.container {
     zoom: 1;
     /*为了兼容IE*/
 }
