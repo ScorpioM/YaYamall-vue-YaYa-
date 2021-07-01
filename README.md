@@ -32,27 +32,18 @@ YaYa医师</h1>
 Visual Studio Code  Idea
 
 YaYa医师组件效果图：
-登录页:
-<img width="50%"  src="/src/assets/img/readme/login.jpg">
-首页:
-
-![YaYa医师首页](/src/assets/img/readme/index.jpg)
-药品专区：
-
-![YaYa医师药品专区](/src/assets/img/readme/yaoping.jpg)
-
-器械专区：
-
-![YaYa医师器械专区](/src/assets/img/readme/qixie.jpg)
-病痛百科：
-
-![YaYa医师病痛百科](/src/assets/img/readme/baike.jpg)
-个人中心：
-
-![YaYa医师个人中心](/src/assets/img/readme/person.jpg)
-商品详情：
-
-![YaYa医师商品详情](/src/assets/img/readme/details.jpg)
+登录页:<br/>
+<img width="60%"  src="/src/assets/img/readme/login.jpg"><br/>
+首页:<br/>
+<img width="60%"  src="/src/assets/img/readme/index.jpg"><br/>
+药品专区：<br/>
+<img width="60%"  src="/src/assets/img/readme/yaoping.jpg"><br/>
+病痛百科：<br/>
+<img width="60%"  src="/src/assets/img/readme/baike.jpg"><br/>
+个人中心：<br/>
+<img width="60%"  src="/src/assets/img/readme/person.jpg"><br/>
+商品详情：<br/>
+<img width="60%"  src="/src/assets/img/readme/details.jpg"><br/>
 
 ## 项目来由
 
