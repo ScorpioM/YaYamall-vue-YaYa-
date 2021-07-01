@@ -91,7 +91,7 @@ YaYa医师是本人在大四期间做的基于Vue 2.x版本的前端项目，作
 
 Modern browsers and Internet Explorer 10+.
 
-| ![IE](/doc/img/icon/ie10.png)</br>IE / Edge | ![Firefox](/doc/img/icon/Firefox.png)</br>Firefox | ![Chrome](/doc/img/icon/Chrome.png)</br>Chrome | ![](/doc/img/icon/Safari.png)</br>Safari |
+| ![IE](	http://www.logodnt.com/uploads/allimg/191113/1-191113121000.png)</br>IE / Edge | ![Firefox](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic%2Fcover%2F00%2F05%2F67%2F57383e45d6bf4_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627722053&t=4a2f3504d0b7bfda11df444a2a0fdd9f)</br>Firefox | ![Chrome](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ba3b56c80fa132f875520f143477.jpg%402o.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627722107&t=f455f116ff4f53f977e0e77da94e0489)</br>Chrome | ![](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ad3b59552885a8012193a3264faa.png%401280w_1l_2o_100sh.png&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627722152&t=e54655be098754cfd557f057b1f6745f)</br>Safari |
 | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
