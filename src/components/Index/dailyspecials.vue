@@ -300,7 +300,7 @@ export default {
         pageNum:1,
         zheLv:2
       },
-      startTime: "2021-03-31 00:00",
+      startTime: "2021-05-17 00:00",
       countDownTime: "",
       timer: null,
       Visible:false,

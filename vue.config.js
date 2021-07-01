@@ -9,10 +9,10 @@ module.exports = {
         // hotOnly: false,
         proxy: { // 设置代理
             '/requestApi/*': {
-                target: 'http://127.0.0.1:8079',
+                target: 'http://127.0.0.1:8079/',
                 changeOrigin: true,
                 pathRewrite: {
-                    '^/requestApi': 'http://127.0.0.1:8079'
+                    '^/requestApi': 'http://127.0.0.1:8079/'
                 }
             }
         },

@@ -243,8 +243,7 @@ export default {
   created() {},
   methods: {
       jump(item){
-          this.$router.push({path:'/Pain-details'})
-           sessionStorage.setItem("details",JSON.stringify(item))
+            this.$router.push({path:'/Pain-details',query:{details:JSON.stringify(item)}})
       },
       // 分页单击事件
         handleCurrentChange(val) {

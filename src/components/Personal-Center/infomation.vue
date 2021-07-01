@@ -17,7 +17,9 @@
           <el-input v-model="ruleForm.name"></el-input>
         </el-form-item>
         
-        
+        <el-form-item label="密码" prop="password">
+          <el-input v-model="ruleForm.password"></el-input>
+        </el-form-item>
         <el-form-item label="手机" prop="phone">
           <el-input v-model="ruleForm.phone"></el-input>
         </el-form-item>
@@ -104,7 +106,7 @@ export default {
           email: [
             { required: true, message: '请输入邮箱', trigger: 'blur' },
           ],
-
+          
           },
           user:{
             name:'',
@@ -113,12 +115,12 @@ export default {
             nick:''
           },
           ruleForm: {
-            userId:localStorage.getItem("id"),
+            id:localStorage.getItem("id"),
           name: localStorage.getItem("name"),
           nick: localStorage.getItem("nick"),
           phone: localStorage.getItem("phone"),
           email: localStorage.getItem("email"),
-          password:'',
+          password:  localStorage.getItem("password"),
           rolesNames:'',
           type:1,
         },
@@ -130,7 +132,11 @@ export default {
     submit(){
        this.$http.post('mt/users/admin/up',this.ruleForm).then((res) => {
                         if (res.data.code == 200) {
-
+                            this.$notify({
+                                title: '成功',
+                                message: '修改成功',
+                                type: 'success'
+                            });
                         }
             });
     },

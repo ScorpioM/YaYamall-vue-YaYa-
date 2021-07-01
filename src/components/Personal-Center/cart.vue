@@ -24,14 +24,18 @@
          {{scope.row.type == 1?scope.row.yaopin.name:scope.row.qixie.name}}
         </template>
          </el-table-column>
-      <el-table-column prop="price" label="单价">
+      <el-table-column  label="单价">
         <template slot-scope="scope">
          {{scope.row.type == 1?scope.row.yaopin.price:scope.row.qixie.price}}
         </template> </el-table-column>
-      <el-table-column prop="num" label="数量"> </el-table-column>
+      <el-table-column  label="数量"> 
+        <template slot-scope="scope">
+         {{scope.row.num}}
+        </template> 
+      </el-table-column>
       <el-table-column label="总价">
         <template slot-scope="scope">
-          ￥{{ scope.row.num * scope.row.type == 1?scope.row.yaopin.price:scope.row.qixie.price }}
+          ￥{{ scope.row.num * (scope.row.type == 1?scope.row.yaopin.price:scope.row.qixie.price) }}
         </template>
       </el-table-column>
        <el-table-column label="操作" width="200"  fixed="right">
@@ -416,7 +420,7 @@ export default {
                })
                
                 this.tableData = res.data.data.rows;
-                console.log( this.newsList)
+              
                
             });
         },

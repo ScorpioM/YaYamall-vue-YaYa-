@@ -139,6 +139,9 @@ axios.interceptors.response.use(
     })
 
 router.beforeEach((to, from, next) => {
+    if(to.path == '/Pain-details'){
+        // window.location.reload()
+    }
     if (to.matched.some(r => r.meta.requiresAuth)) { // 判断该路由是否需要登录权限
         if (store.getters.isLogin) { // 通过vuex 如果当前有登录
             next();

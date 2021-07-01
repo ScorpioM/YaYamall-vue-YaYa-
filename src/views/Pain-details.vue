@@ -148,9 +148,16 @@ export default {
     Header,
     Footer,
   },
+  watch:{
+    $route(to,from){
+        if(to.query.details){
+          this.details = JSON.parse(to.query.details)
+        }
+    }
+  },
   data() {
     return {
-      details: JSON.parse(sessionStorage.getItem('details')),
+      details:JSON.parse(this.$route.query.details),
       carousel: [
         {
           pic: require("../assets/img/pain/1.jpg"),
@@ -168,7 +175,11 @@ export default {
       ],
     };
   },
-  created() {},
+  created() {
+    if(this.$route.query.details){
+      this.details = JSON.parse(this.$route.query.details)
+    }
+  },
   methods: {},
   mounted() {},
 };

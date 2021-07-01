@@ -6,16 +6,16 @@
       <img src="../../assets/img/login/logo2.png" alt="">
       <div class="address">
           <img src="../../assets/img/footer/home.png" alt="">
-          <div>地址：中国湖南省怀化市怀化学院10栋216室</div>
+          <div>地址：xxxxxxxxxxxxxxxxxxxxxx</div>
       </div>
       <div class="email">
           <div>电子邮件：</div>
-          <div>879684365@qq.com</div>
+          <div>xxxxxxxx@qq.com</div>
       </div>
       <div class="phone">
           <img src="../../assets/img/footer/phone.png" alt="">
           <div>电话：
-(+86) 18174582826)</div>
+(+86) xxxxxxxxxxxx)</div>
       </div>
       </div>
   </div>

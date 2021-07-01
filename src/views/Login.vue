@@ -97,7 +97,7 @@ export default {
       
         this.$http
           .post("/mt/users/login", {
-            name: this.form.name,
+            nick: this.form.name,
             password: this.form.password,
           })
           .then((res) => {
@@ -118,6 +118,7 @@ export default {
               localStorage.setItem("pictureAddr",res.data.data.pictureAddr)
               localStorage.setItem("name",res.data.data.name)
               localStorage.setItem("email",res.data.data.email)
+              localStorage.setItem("password",res.data.data.password)
               
  this.$router.push({
                     path: "/",
@@ -142,39 +143,7 @@ export default {
         this.$emit("dialogVisibleShow", "注册");
       }
     },
-    // 获取验证码
-    getCode() {
-      // 节流阀
-      if (this.codeFlag) {
-        return;
-      }
-      if (this.activeName == "name2" && this.form.phoneNumber !== "") {
-        if (this.codeNumber == 60) {
-          if (!/^1[345678]\d{9}$/.test(this.form.phoneNumber)) {
-            this.$message({
-              message: "请输入正确的手机号",
-              type: "warning",
-            });
-            return;
-          }
-          this.$http
-            .get("validata/smsCode/" + this.form.phoneNumber)
-            .then((res) => {
-              if (res.data.code == 200) {
-                this.$message({
-                  message: "发送成功",
-                  type: "success",
-                });
-
-                this.codeFlag = true;
-                this.codeSetInterval = setInterval(() => {
-                  this.codeNumber--;
-                }, 1000);
-              }
-            });
-        }
-      }
-    },
+    
     socket(){
       
       if (typeof WebSocket != 'undefined') {

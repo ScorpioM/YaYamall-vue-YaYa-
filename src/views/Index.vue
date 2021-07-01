@@ -4,7 +4,7 @@
       <el-carousel height="100vh">
         <el-carousel-item
           :style="{
-            backgroundImage: 'url(' + item.pic + ')',
+            backgroundImage: 'url(' + item.picture[0] + ')',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '100% 100%',
             backgroundSize: '100% 100%',
@@ -46,6 +46,7 @@
                 :data-aos-once="false"
                 :data-aos-delay="200"
                 :data-aos-duration="2000"
+                @click="jump(item)"
               >
                 前往查看
               </div>
@@ -195,10 +196,39 @@ export default {
             "骨折是指骨头或骨头的结构完全或部分断裂。多见于儿童及老年人，中青年也时有发生",
         },
       ],
+             tableForm:{
+                pageSize:4,
+                pageNum:1,
+                total:0
+            },
     };
   },
   created() {},
-  methods: {},
-  mounted() {},
+  methods: {
+
+    getWikipedia(){
+            this.$http.get('mt/baike/findAll',{
+                params:this.tableForm
+            }).then((res) => {
+                if (res.data.code == 200) {
+                    res.data.data.rows.forEach((item,index)=>{
+                        item.yufangaddr = JSON.parse(item.yufangaddr)
+                        item.picture = JSON.parse(item.picture)
+                    })
+                this.carousel = res.data.data.rows;
+                // this.tableForm.total = res.data.data.total;
+                }
+            });
+        },
+        jump(item){
+
+          // sessionStorage.setItem("details",JSON.stringify(item))
+          this.$router.push({path:'/Pain-details',query:{details:JSON.stringify(item)}})
+           
+      },
+  },
+  mounted() {
+    this.getWikipedia();
+  },
 };
 </script>

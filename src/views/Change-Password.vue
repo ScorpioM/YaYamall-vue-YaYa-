@@ -98,23 +98,23 @@ export default {
         callback();
       };
     };
-    var validateName =( rule, value, callback) => {
-      if (value === "") {
-        callback(new Error("昵称不可为空"));
-      } else {
-        if (value !== "") {
-         this.$http
-          .get(
-            "/mt/users/userNameExist",{params:{name:value}}
-          ).then(res=>{
-            if(res.data.code !==200){
-               callback(new Error("该昵称已被占用"));
-            }
-          })
-        }
-        callback();
-      };
-    };
+    // var validateName =( rule, value, callback) => {
+    //   if (value === "") {
+    //     callback(new Error("昵称不可为空"));
+    //   } else {
+    //     if (value !== "") {
+    //      this.$http
+    //       .get(
+    //         "/mt/users/userNameExist",{params:{name:value}}
+    //       ).then(res=>{
+    //         if(res.data.code !==200){
+    //            callback(new Error("该昵称已被占用"));
+    //         }
+    //       })
+    //     }
+    //     callback();
+    //   };
+    // };
     return {
       form: {
         name: "",
@@ -129,7 +129,7 @@ export default {
         ],
         nick: [
           { required: true, message: "请输入用户名", trigger: "blur" },
-          { required: true, validator: validateName, trigger: "blur" },
+          // { required: true, validator: validateName, trigger: "blur" },
         ],
         phone: [
           { required: true, message: "请输入手机号", trigger: "blur" },

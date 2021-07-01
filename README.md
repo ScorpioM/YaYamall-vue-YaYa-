@@ -1,90 +1,132 @@
-```
-YaYa医师医药商城
-===============
-```
+<p align="center">
+ <h1> <img width="45px" src="/src/assets/img/readme/logo.png">
+MChat</h1>
 
- 
+</p>
 
-```
-## 安装环境
-```
+<p align="center">  
+  <a href="https://github.com/vuejs/vue">
+    <img src="https://img.shields.io/badge/vue-2.5.10-brightgreen.svg" alt="vue">
+  </a>
+  <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
+    <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
+  </a>
 
- 
+  <a href="https://github.com/18106960985/meteor-curator-admin/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
+  </a>
+</p>
 
-```
->+ Vue.js3.0
->+ 运行 `npm run serve`
->+ 打包 `npm run build`
-```
+简体中文 | [English](README.en.md)
 
- 
+# 如果觉得还行,请给一个👉 star,谢谢😎 ! 有疑问请加群。
 
- 
+## 简介 
 
-```
-### 特点
-~~~
-1.  商城简洁大方，整体欧美风格
-2.  商品分类明确
-~~~
-```
+### 这是一款基于 vue.js 开发的医药商城系统，是我的本科毕业设计项目。
 
- 
+下面是效果演示图：
 
-```
-### 应用场景
-集中管理公司旗下各网站（PC,WAP,APP,客户端）图片(具体的，比如：产品图，网站素材图)
-```
+![演示图](/src/assets/img/readme/)
 
- 
+YaYa医师组件效果图：
+![YaYa医师登录页](/src/assets/img/readme/login.jpg)
 
-```
-### 功能介绍
-+ 站点：多个站点，可以随意切换
-+ 文件夹：新建，修改，删除（注意：请选选中目录节点）
-+ 图片：上传图片、全选、取消、移动、图片地址、替换、删除
-+ 其它：可以支持目录搜索，拖动目录更换目录类别
-```
+![YaYa医师首页](/src/assets/img/readme/index.jpg)
 
- 
+![YaYa医师药品专区](/src/assets/img/readme/yaoping.jpg)
 
- 
+YaYa医师组件效果图：
+
+![YaYa医师器械专区](/src/assets/img/readme/qixie.jpg)
+
+![YaYa医师病痛百科](/src/assets/img/readme/baike.jpg)
+
+![YaYa医师个人中心](/src/assets/img/readme/person.jpg)
+
+![YaYa医师商品详情](/src/assets/img/readme/details.jpg)
+
+## 项目来由
 
 ```
-### 版本
-+ V1.0    更新时间:2018-05-23
+YaYa医师是本人，，，，
 ```
 
- 
+***
 
-```
-### 版本库：
-+ Git获取：https:``//github.com/ziqinComeOn
-+ SVN获取：svn:``//gitee.com/ziqinComeOn/wn1.0
+#### 如何安装
+
+* 使用 `npm` 安装
+
+  ``` bash
+  npm install vue-mchat
+  ```
+##### 使用
+
+在`main.js`中引入
+
+  ``` bash
+  # npm 下载方式
+  // 进入css
+  import 'MChat/lib/MChat.css'
+  //引入组件
+  import MChat from 'MChat'
+  // 使用vue加载组件
+  Vue.use(MChat)
+  # 
+  ```
+
+#### 如何进行二次开发
+
+##### 方案一：
+
+直接将 `pacages` 文件夹复制到你需要的项目，在 `main.js` 中引入 `vue-mchat`:
+
+```JavaScript
+import App from './App.vue'
+import MChat from '../packages/index'
+
+Vue.use(MChat)
 ```
 
- 
+##### 方案二：
 
-```
-### 网址：
-[https:``//github.com/ziqinComeOn](https://github.com/ziqinComeOn)
- ``<br>
-账户：马涛 密码：mt879684365<br>
-免费使用
-```
+在 `vue-mchat` 的基础上进行开发，通过打包成js库引入：
 
- 
+在 `vue-mchat` 目录下执行：
 
- 
-
-```
-### 作者：子钦加油
-1.0版本属于初级版本，只做了基础功能，只能安装“服务器”环境。欢迎与“子钦加油”交流
+```bash
+npm run lib 
 ```
 
- 
+可获得 `lib` 文件其中包含 `MChat` 的编译文件库，将 `lib` 整个复制到项目里，在 `main.js` 中引入:
 
+```JavaScript
+import  '../lib/MChat.css'
+import MChat from '../lib/MChat.umd'
+
+Vue.use(MChat)
 ```
-<br>
-楼主QQ：879684365
-```
+
+## 🌰 加群获得群聊版本代码
+
+[群聊演示地址](http://www.julymeteor.com/im/)
+[文档-示例](http://www.julymeteor.com/chat/)
+
+## QQ交流群
+
+![共同进步](/doc/img/qq_group.png)
+
+## Browsers support
+
+Modern browsers and Internet Explorer 10+.
+
+| ![IE](/doc/img/icon/ie10.png)</br>IE / Edge | ![Firefox](/doc/img/icon/Firefox.png)</br>Firefox | ![Chrome](/doc/img/icon/Chrome.png)</br>Chrome | ![](/doc/img/icon/Safari.png)</br>Safari |
+| --------- | --------- | --------- | --------- |
+| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
+
+## License
+
+[MIT](/LICENSE)
+
+Copyright (c) 2020-present july-meteor
