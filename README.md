@@ -1,5 +1,5 @@
 <p align="center">
- <h1> <img width="100px" height="50px" src="/src/assets/img/readme/logo.png">
+ <h1> <img width="100px" height="30px" src="/src/assets/img/readme/logo.png">
 YaYa医师</h1>
 
 </p>
@@ -86,8 +86,7 @@ YaYa医师是本人在大四期间做的基于Vue 2.x版本的前端项目，作
 
 ## QQ交流群
 
-![共同进步](/src/assets/img/readme/qunzu.jpg)
-
+<img width="350px" height="672px"  src="/src/assets/img/readme/qunzu.jpg"><br/>
 ## Browsers support
 
 Modern browsers and Internet Explorer 10+.
