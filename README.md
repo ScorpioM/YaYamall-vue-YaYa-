@@ -1,6 +1,6 @@
 <p align="center">
  <h1> <img width="45px" src="/src/assets/img/readme/logo.png">
-MChat</h1>
+YaYa医师</h1>
 
 </p>
 
@@ -10,10 +10,6 @@ MChat</h1>
   </a>
   <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
     <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
-  </a>
-
-  <a href="https://github.com/18106960985/meteor-curator-admin/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
   </a>
 </p>
 
@@ -115,7 +111,7 @@ Vue.use(MChat)
 
 ## QQ交流群
 
-![共同进步](/doc/img/qq_group.png)
+![共同进步](/src/assets/img/readme/qunzu.jpg)
 
 ## Browsers support
 
@@ -125,8 +121,6 @@ Modern browsers and Internet Explorer 10+.
 | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
-## License
 
-[MIT](/LICENSE)
 
-Copyright (c) 2020-present july-meteor
+Copyright (c) 2020-present ScorpioM
