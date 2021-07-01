@@ -56,7 +56,7 @@ YaYa医师是本人在大四期间做的基于Vue 2.x版本的前端项目，作
 #### 如何安装
 * 拉取代码
  ``` bash
-  git clone 
+  git clone  https://github.com/ScorpioM/YaYamall.git
   ```
 
 * 使用 `npm` 下载项目依赖
