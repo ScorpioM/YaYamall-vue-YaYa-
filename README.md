@@ -1,5 +1,5 @@
 <p align="center">
- <h1> <img width="45px" src="/src/assets/img/readme/logo.png">
+ <h1> <img width="100px" height="50px" src="/src/assets/img/readme/logo.png">
 YaYa医师</h1>
 
 </p>
@@ -33,7 +33,7 @@ Visual Studio Code  Idea
 
 YaYa医师组件效果图：
 登录页:
-![YaYa医师登录页](/src/assets/img/readme/login.jpg)
+<img width="50%"  src="/src/assets/img/readme/login.jpg">
 首页:
 
 ![YaYa医师首页](/src/assets/img/readme/index.jpg)
