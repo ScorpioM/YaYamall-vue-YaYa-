@@ -1,12 +1,12 @@
 <p align="center">
- <h1> <img width="100px" height="30px" src="/src/assets/img/readme/logo.png">
+ <h1> <img width="110px" height="30px" src="/src/assets/img/readme/logo.png">
 YaYa医师</h1>
 
 </p>
 
 <p align="center">  
   <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.5.10-brightgreen.svg" alt="vue">
+    <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="vue">
   </a>
   <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
     <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
