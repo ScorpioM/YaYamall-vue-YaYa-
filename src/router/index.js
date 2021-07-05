@@ -38,42 +38,42 @@ const routes = [{
         name: "Pain",
         component: () =>
             import("../views/Pain.vue"),
-        meta: { requiresAuth: false,keepAlive: true, title: "病痛百科",index:4 }
+        meta: { requiresAuth: true,keepAlive: true, title: "病痛百科",index:4 }
     },
     {
         path: "/Pain-details",
         name: "Pain-details",
         component: () =>
             import("../views/Pain-details.vue"),
-        meta: { requiresAuth: false,keepAlive: true, title: "病痛详情",index:1 }
+        meta: { requiresAuth: true,keepAlive: true, title: "病痛详情",index:1 }
     },
     {
         path: "/Product-details",
         name: "Product-details",
         component: () =>
             import("../views/Product-details.vue"),
-        meta: { requiresAuth: false,keepAlive: true, title: "商品详情",index:6 }
+        meta: { requiresAuth: true,keepAlive: true, title: "商品详情",index:6 }
     },
     {
         path: "/Drug",
         name: "Drug",
         component: () =>
             import("../views/Drug.vue"),
-        meta: { requiresAuth: false,keepAlive: true, title: "药品列表",index:2 }
+        meta: { requiresAuth: true,keepAlive: true, title: "药品列表",index:2 }
     },
     {
         path: "/Instrument",
         name: "Instrument",
         component: () =>
             import("../views/Instrument.vue"),
-        meta: { requiresAuth: false, keepAlive: true,title: "器械专区",index:3 }
+        meta: { requiresAuth: true, keepAlive: true,title: "器械专区",index:3 }
     },
     {
         path: "/Personal-Center",
         name: "Personal-Center",
         component: () =>
             import("../views/Personal-Center.vue"),
-        meta: { requiresAuth: false,keepAlive: true, title: "个人中心",index:5 }
+        meta: { requiresAuth: true,keepAlive: true, title: "个人中心",index:5 }
     },
     
 ];
@@ -135,13 +135,9 @@ axios.interceptors.response.use(
         return response;
     },
     error => {
-        return Promise.reject(error)
     })
 
 router.beforeEach((to, from, next) => {
-    if(to.path == '/Pain-details'){
-        // window.location.reload()
-    }
     if (to.matched.some(r => r.meta.requiresAuth)) { // 判断该路由是否需要登录权限
         if (store.getters.isLogin) { // 通过vuex 如果当前有登录
             next();

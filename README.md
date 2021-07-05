@@ -1,19 +1,15 @@
 <p align="center">
- <h1> <img width="45px" src="/src/assets/img/readme/logo.png">
-MChat</h1>
+ <h1> <img width="110px" height="30px" src="/src/assets/img/readme/logo.png">
+YaYa医师</h1>
 
 </p>
 
 <p align="center">  
   <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.5.10-brightgreen.svg" alt="vue">
+    <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="vue">
   </a>
   <a href="https://travis-ci.org/PanJiaChen/vue-element-admin" rel="nofollow">
     <img src="https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master" alt="Build Status">
-  </a>
-
-  <a href="https://github.com/18106960985/meteor-curator-admin/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
   </a>
 </p>
 
@@ -23,110 +19,81 @@ MChat</h1>
 
 ## 简介 
 
-### 这是一款基于 vue.js 开发的医药商城系统，是我的本科毕业设计项目。
+### 这是一款基于 vue.js 开发的前后端分离的医药商城系统，是我的本科毕业设计项目。
+## 演示信息(用户端)
 
-下面是效果演示图：
+* [YaYa医师商城演示地址(http://112.124.202.96)](http://112.124.202.96)
+* 账号：tourists  密码：123456
 
-![演示图](/src/assets/img/readme/)
+## 本地安装
+基本环境：
+* Node v8+
+* Vue  2.0+
+* JDK  8.0+(如有意向了解此项目java端代码)
+* MySQL 5.7+
+
+## 开发工具
+Visual Studio Code  Idea
 
 YaYa医师组件效果图：
-![YaYa医师登录页](/src/assets/img/readme/login.jpg)
-
-![YaYa医师首页](/src/assets/img/readme/index.jpg)
-
-![YaYa医师药品专区](/src/assets/img/readme/yaoping.jpg)
-
-YaYa医师组件效果图：
-
-![YaYa医师器械专区](/src/assets/img/readme/qixie.jpg)
-
-![YaYa医师病痛百科](/src/assets/img/readme/baike.jpg)
-
-![YaYa医师个人中心](/src/assets/img/readme/person.jpg)
-
-![YaYa医师商品详情](/src/assets/img/readme/details.jpg)
+登录页:<br/>
+<img width="60%"  src="/src/assets/img/readme/login.jpg"><br/>
+首页:<br/>
+<img width="60%"  src="/src/assets/img/readme/index.jpg"><br/>
+药品专区：<br/>
+<img width="60%"  src="/src/assets/img/readme/yaoping.jpg"><br/>
+病痛百科：<br/>
+<img width="60%"  src="/src/assets/img/readme/baike.jpg"><br/>
+个人中心：<br/>
+<img width="60%"  src="/src/assets/img/readme/person.jpg"><br/>
+商品详情：<br/>
+<img width="60%"  src="/src/assets/img/readme/details.jpg"><br/>
 
 ## 项目来由
 
 ```
-YaYa医师是本人，，，，
+YaYa医师是本人在大四期间做的基于Vue 2.x版本的前端项目，项目logo为阿里iconfont官网内图标，网页所有内容由本人设计，作为我的毕设项目也是顺利通过了各导师的考核,当然该项目体系内还包含YaYa医师后台管理系统和其后端的代码，如有意向的可加群后了解；
 ```
 
 ***
 
 #### 如何安装
-
-* 使用 `npm` 安装
-
-  ``` bash
-  npm install vue-mchat
-  ```
-##### 使用
-
-在`main.js`中引入
-
-  ``` bash
-  # npm 下载方式
-  // 进入css
-  import 'MChat/lib/MChat.css'
-  //引入组件
-  import MChat from 'MChat'
-  // 使用vue加载组件
-  Vue.use(MChat)
-  # 
+* 拉取代码
+ ``` bash
+  git clone  https://github.com/ScorpioM/YaYamall.git
   ```
 
-#### 如何进行二次开发
+* 使用 `npm` 下载项目依赖
+  ``` bash
+  npm install 
+  ```
+##### 运行
 
-##### 方案一：
+  ``` bash
+  # npm 运行
+ npm run serve
+  # npm 打包
+ npm run build
+  ```
 
-直接将 `pacages` 文件夹复制到你需要的项目，在 `main.js` 中引入 `vue-mchat`:
+## 商城功能
+* 一. 用户端功能：账号注册、用户登录、商品内容显示、商品信息分类列表、购买信息功能、商品加入购物车、商品收藏、系统留言、订单结算、查看病痛百科、商品留言、评论;
+* 二. 系统管理员端功能：用户管理功能、用户角色管理功能、药品管理功能、器械管理功能、商品评论管理功能、系统留言管理功能、订单管理功能、药品分类管理功能、器械分类管理功能、病痛百科分类管理功能、病痛百科管理功能;(YaYa医师后台管理系统)
+* 三. 商家管理员端功能:商家管理员在功能上只可对关于商品的功能存在，比如系统管理员中的药品管理、器械管理、商品评论管理功能、订单管理功能，其它功能涉及到了系统的整体运营使用，所以在此不给商家管理员设置其权限;(YaYa医师后台管理系统)
 
-```JavaScript
-import App from './App.vue'
-import MChat from '../packages/index'
 
-Vue.use(MChat)
-```
-
-##### 方案二：
-
-在 `vue-mchat` 的基础上进行开发，通过打包成js库引入：
-
-在 `vue-mchat` 目录下执行：
-
-```bash
-npm run lib 
-```
-
-可获得 `lib` 文件其中包含 `MChat` 的编译文件库，将 `lib` 整个复制到项目里，在 `main.js` 中引入:
-
-```JavaScript
-import  '../lib/MChat.css'
-import MChat from '../lib/MChat.umd'
-
-Vue.use(MChat)
-```
-
-## 🌰 加群获得群聊版本代码
-
-[群聊演示地址](http://www.julymeteor.com/im/)
-[文档-示例](http://www.julymeteor.com/chat/)
 
 ## QQ交流群
 
-![共同进步](/doc/img/qq_group.png)
-
+<img width="350px" height="672px"  src="/src/assets/img/readme/qunzu.jpg"><br/>
 ## Browsers support
 
 Modern browsers and Internet Explorer 10+.
 
-| ![IE](/doc/img/icon/ie10.png)</br>IE / Edge | ![Firefox](/doc/img/icon/Firefox.png)</br>Firefox | ![Chrome](/doc/img/icon/Chrome.png)</br>Chrome | ![](/doc/img/icon/Safari.png)</br>Safari |
+| ![IE](	http://www.logodnt.com/uploads/allimg/191113/1-191113121000.png)</br>IE / Edge | ![Firefox](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic%2Fcover%2F00%2F05%2F67%2F57383e45d6bf4_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627722053&t=4a2f3504d0b7bfda11df444a2a0fdd9f)</br>Firefox | ![Chrome](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ba3b56c80fa132f875520f143477.jpg%402o.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627722107&t=f455f116ff4f53f977e0e77da94e0489)</br>Chrome | ![](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ad3b59552885a8012193a3264faa.png%401280w_1l_2o_100sh.png&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627722152&t=e54655be098754cfd557f057b1f6745f)</br>Safari |
 | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
-## License
 
-[MIT](/LICENSE)
 
-Copyright (c) 2020-present july-meteor
+Copyright (c) 2021-present ScorpioM

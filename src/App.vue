@@ -29,6 +29,11 @@ export default {
   },
   created() {},
   mounted() {
+    window.addEventListener("beforeunload", () => {
+      localStorage.clear();
+      this.$store.commit("setIsLogin", false);
+      localStorage.setItem("isLogin", false);
+    });
   },
   methods: {
      delay(){
